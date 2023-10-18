@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Date;
 import java.text.NumberFormat;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -149,10 +150,17 @@ public class App {
         System.out.println(percent2); //prints 10%
 
         // reading input
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Age: ");
-        byte age2 = scanner.nextByte();
-        System.out.println("You are " + age2);
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.print("Age: ");
+        // // System.out.println("Age:");//not used because newline is added from println
+        // byte age2 = scanner.nextByte();
+        // System.out.println("You are " + age2);
+
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.print("Name: ");
+        //next takes first word only
+        String name = scanner2.nextLine().trim();//trim removes whitespace
+        System.out.println("You are " + name);
 
 
 
