@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        byte age = 30;
-        int viewsCount = 123_456_789;
-        long viewsCountLong = 3_123_456_789L;
-        float price = 10.99F;
-        char letter = 'A';
-        boolean isEligible = false;
+        // byte age = 30;
+        // int viewsCount = 123_456_789;
+        // long viewsCountLong = 3_123_456_789L;
+        // float price = 10.99F;
+        // char letter = 'A';
+        // boolean isEligible = false;
 
         Date now = new Date();
         now.getTime();
@@ -60,6 +60,8 @@ public class App {
 
         //constants
         final float PI = 3.14F;//final makes it a constant
+        // PI = 1; //cannot reassign constant
+        System.out.println(PI); //prints 3.14
 
         //arithmetic expressions
         int result = 10 / 3;
@@ -84,8 +86,11 @@ public class App {
 
         //order of operations
         int x3 = 10 + 3 * 2;//order of operations is * then + so 16
+        System.out.println(x3); //prints 16
+
         int x4 = (10 + 3) * 2;//order of operations is () then * so 26
-        
+        System.out.println(x4); //prints 26
+
         //implicit casting
         //byte > short > int > long > float > double
         short x5 = 1;
@@ -122,8 +127,13 @@ public class App {
         System.out.println(result5); //prints 1
 
         int result6 = Math.max(1, 2);//returns higher number
+        System.out.println(result6); //prints 2
+
         int result7 = Math.min(1, 2);//returns lower number
+        System.out.println(result7); //prints 1
+
         double result8 = Math.random();//returns random number between 0 and 1
+        System.out.println(result8); //prints random number between 0 and 1
 
         int result9 = (int)Math.round(Math.random() * 100);//returns random number between 0 and 100
         //int casting as Math.round returns long
@@ -161,6 +171,9 @@ public class App {
         //next takes first word only
         String name = scanner2.nextLine().trim();//trim removes whitespace
         System.out.println("You are " + name);
+
+        scanner2.close();
+
 
 
 
